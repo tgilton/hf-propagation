@@ -1,0 +1,15 @@
+  [10/92 dates] 26s elapsed
+  [20/92 dates] 51s elapsed
+  [30/92 dates] 76s elapsed
+  [40/92 dates] 98s elapsed
+  [50/92 dates] 121s elapsed
+  [60/92 dates] 145s elapsed
+  [70/92 dates] 171s elapsed
+  [80/92 dates] 192s elapsed
+  [90/92 dates] 213s elapsed
+Processing 92 dates x 3 bands (keep_geo=False)...
+
+Done in 217s (3.6 min)
+Files processed: 276, missing: 0
+Aggregate rows: 16,608
+Written to /Users/tgilton/high_value_dB/output/wspr_agg_v2.parquet (0.1 MB)
