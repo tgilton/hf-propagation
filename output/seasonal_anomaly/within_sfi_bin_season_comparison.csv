@@ -1,0 +1,12 @@
+sfi_bin,season,snr_median,n
+Low (100-160),autumn,-17.0,1285406
+Low (100-160),spring,-18.0,1349734
+Low (100-160),summer,-18.0,131574
+Low (100-160),winter,-17.0,688871
+Med (160-200),autumn,-17.0,1201728
+Med (160-200),spring,-18.0,176116
+Med (160-200),summer,-21.0,48548
+Med (160-200),winter,-17.0,1199026
+High (200-250),summer,-22.0,1654
+High (200-250),winter,-17.0,754960
+Very High (250+),winter,-17.0,186904

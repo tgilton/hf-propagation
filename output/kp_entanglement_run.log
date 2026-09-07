@@ -1,0 +1,33 @@
+Total 3-hourly Kp readings within the 12 sampled weeks: 672
+kp_bin   Quiet (0-2)  Unsettled (2-4)  Storm (4-6)  Severe (6+)
+month                                                          
+2023-01           30               26            0            0
+2023-02           28               25            3            0
+2023-03           19               27            4            6
+2023-04           35               16            3            2
+2023-05           38               12            6            0
+2023-06           25               29            2            0
+2023-07           35               16            5            0
+2023-08           44               12            0            0
+2023-09           23               22           10            1
+2023-10           41               13            2            0
+2023-11           25               23            7            1
+2023-12           34               20            2            0
+
+Storm+Severe 3h readings by month:
+month
+2023-02     3
+2023-03    10
+2023-04     5
+2023-05     6
+2023-06     2
+2023-07     5
+2023-09    11
+2023-10     2
+2023-11     8
+2023-12     2
+
+Total Storm+Severe readings: 54
+Distinct sampled months contributing any Storm+Severe reading: 10/12
+
+Verdict: LOW RISK: Storm+Severe Kp is spread across most sampled months, not cornered into 1-2 weeks the way High/Very-High SFI was.
