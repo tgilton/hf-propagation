@@ -1,0 +1,72 @@
+======================================================================
+STEP 1: Reproduce original midpoint-SZA finding from wspr_agg_v2.parquet
+======================================================================
+band_m          20         40
+sza_bin                      
+25      -15.507328 -23.000000
+30      -16.209687 -22.430179
+35      -16.289364 -23.112097
+40      -16.616735 -22.986903
+45      -16.557824 -21.500366
+50      -16.315614 -21.152800
+55      -16.678385 -20.517583
+60      -16.432291 -20.043818
+65      -16.421472 -19.444184
+70      -16.477069 -18.641683
+75      -16.241627 -17.788468
+80      -16.085991 -17.010712
+85      -16.131495 -16.889702
+90      -16.197047 -16.305084
+95      -16.413744 -16.388868
+100     -16.605821 -16.416004
+105     -16.713986 -16.565095
+110     -16.826824 -16.673445
+115     -17.104258 -16.832437
+120     -17.631085 -16.951647
+125     -17.563407 -16.738015
+130     -17.320517 -16.426482
+135     -16.699326 -15.947317
+140     -16.062832 -15.670771
+145     -14.801403 -16.067691
+150     -17.846154 -17.235294
+
+Building raw equinox-week table (14 days x 2 bands, with endpoint geometry)...
+Total spots (DX 1k-8k km, equinox weeks, 20m+40m): 20,427,927
+
+======================================================================
+STEP 3: Median SNR - true gray-line vs midpoint gray-line vs baselines
+======================================================================
+ band_m dist_bucket                         population       n  snr_median
+     20       1k-2k midpoint gray-line (original def.)  639532       -15.0
+     20       1k-2k    TRUE gray-line (both endpoints)  140495       -14.0
+     20       1k-2k           both daylight (baseline) 5041888       -15.0
+     20       1k-2k              both night (baseline)  631646       -15.0
+     20       2k-4k midpoint gray-line (original def.)  345454       -17.0
+     20       2k-4k    TRUE gray-line (both endpoints)   10413       -17.0
+     20       2k-4k           both daylight (baseline) 1375984       -19.0
+     20       2k-4k              both night (baseline) 1028978       -17.0
+     20       4k-8k midpoint gray-line (original def.)  186794       -19.0
+     20       4k-8k    TRUE gray-line (both endpoints)      22       -16.0
+     20       4k-8k           both daylight (baseline)  126759       -21.0
+     20       4k-8k              both night (baseline)  173893       -19.0
+     40       1k-2k midpoint gray-line (original def.)  500415       -16.0
+     40       1k-2k    TRUE gray-line (both endpoints)  124007       -16.0
+     40       1k-2k           both daylight (baseline)  652001       -20.0
+     40       1k-2k              both night (baseline) 2783805       -15.0
+     40       2k-4k midpoint gray-line (original def.)  139943       -19.0
+     40       2k-4k    TRUE gray-line (both endpoints)    4770       -17.0
+     40       2k-4k           both daylight (baseline)   17347       -21.0
+     40       2k-4k              both night (baseline) 1338033       -18.0
+     40       4k-8k midpoint gray-line (original def.)   11705       -21.0
+     40       4k-8k    TRUE gray-line (both endpoints)       4       -22.5
+     40       4k-8k           both daylight (baseline)      37       -22.0
+     40       4k-8k              both night (baseline)  586659       -19.0
+
+======================================================================
+STEP 4: What fraction of midpoint-gray-line spots are TRUE gray-line?
+======================================================================
+ band_m  n_midpoint_grayline  n_also_true_grayline  overlap_fraction
+     20              1171780                150921          0.128796
+     40               652063                128779          0.197495
+
+Done. Outputs in /Users/tgilton/high_value_dB/output/gray_line
