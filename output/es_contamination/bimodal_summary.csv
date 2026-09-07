@@ -1,0 +1,7 @@
+dist_bucket,season,n,es_fraction,median_snr
+500-1k,summer (May-Aug),5211262,0.15493156935882327,-16.0
+500-1k,winter (Jan-Feb),2086074,0.1989593849499107,-14.0
+1k-2k,summer (May-Aug),1604329,0.059939700647435784,-20.0
+1k-2k,winter (Jan-Feb),604754,0.06024267718774907,-19.0
+2k-4k,summer (May-Aug),93198,0.02414214897315393,-22.0
+2k-4k,winter (Jan-Feb),29303,0.04108794321400539,-21.0
